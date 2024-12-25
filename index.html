@@ -1,0 +1,18 @@
+<body>
+    <h1>Zip File Renamer</h1>
+    <form id="zip-form">
+        <label for="zip-file">Upload Zip File:</label>
+        <input type="file" id="zip-file" accept=".zip" required>
+        <br><br>
+        <label for="rename-term">Enter Term to Append:</label>
+        <input type="text" id="rename-term" placeholder="e.g., _modified" required>
+        <br><br>
+        <button type="submit">Process Files</button>
+    </form>
+    <div id="output"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.0/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
